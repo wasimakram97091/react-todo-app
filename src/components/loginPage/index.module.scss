@@ -1,0 +1,91 @@
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &__container {
+    height: 100vh;
+    background-color: #1a1a1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+      min-width: 300px;
+      min-height: 200px;
+      background-color: #950740;
+      text-align: center;
+      padding: 1.5rem;
+      color: #ffffff;
+      border-radius: 10px;
+      @media screen and (max-width: 768px) {
+        min-width: 100%;
+        padding: 0;
+      }
+
+      > input {
+        height: 40px;
+        border-radius: 5px;
+        padding: 0 10px;
+        border: none;
+        width: 94%;
+        margin-bottom: 30px;
+        outline: none;
+        font-size: 18px;
+        @media screen and (max-width: 768px) {
+          width: 75%;
+        }
+
+        &::placeholder {
+          font-size: 17px;
+        }
+      }
+      > p {
+        > a {
+          color: #0fe85f;
+          cursor: pointer;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+
+      &__inp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > input {
+          height: 40px;
+          border-radius: 5px 0 0 5px;
+          padding: 0 10px;
+          border: none;
+          width: 94%;
+          margin-bottom: 30px;
+          outline: none;
+          font-size: 18px;
+          @media screen and (max-width: 768px) {
+            width: calc(75% - 40px);
+          }
+
+          &::placeholder {
+            font-size: 17px;
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+        }
+        > button {
+          margin-bottom: 30px;
+          font-size: 20px;
+          padding: 8.5px;
+          background-color: #ffffff;
+          border: none;
+          border-radius: 0 5px 5px 0;
+          cursor: pointer;
+          color: #3e3e41;
+        }
+      }
+    }
+  }
+}
+.error {
+  color: rgb(244, 146, 146);
+}

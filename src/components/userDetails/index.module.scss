@@ -1,0 +1,65 @@
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &__container {
+    text-align: center;
+
+    &__content {
+      min-width: 200px;
+      max-height: 115px;
+      border: none;
+      border-radius: 5px;
+
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      color: #fff;
+      padding: 0.5rem 1rem;
+
+      @media screen and (max-width: 768px) {
+        min-width: 125px;
+        min-height: 80px;
+        padding: 5px 10px;
+      }
+
+      > p {
+        font-size: 12px;
+        margin: 0;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+          padding-bottom: 5px;
+        }
+      }
+      > h2 {
+        margin: 10px 0;
+        font-size: 16px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+      > i {
+        font-size: 30px;
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+      > h5 {
+        margin: 0;
+        margin-bottom: 10px;
+
+        > span {
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+
+          @media screen and (max-width: 768px) {
+            font-size: 12px;
+          }
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

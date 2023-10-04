@@ -1,0 +1,42 @@
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1d;
+
+    &__content {
+      text-align: center;
+      min-width: 300px;
+      background-color: #950740;
+      padding: 20px;
+
+      @media screen and (max-width: 768px) {
+        min-width: 100%;
+        padding: 20px 0;
+      }
+      &__text {
+        > h2 {
+          font-size: 2rem;
+          color: #ffffff;
+          @media screen and (max-width: 768px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        &__img {
+          > img {
+            width: calc(100% - 20px);
+            height: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

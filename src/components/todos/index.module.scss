@@ -1,0 +1,150 @@
+.main {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1a1a1d;
+  height: 100vh;
+
+  &__container {
+    padding: 50px 20px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+    &__content {
+      &__userDetails {
+        display: flex;
+        justify-content: right;
+      }
+
+      &__heading {
+        > h2 {
+          background-color: #950740;
+          padding: 7px 0;
+          font-size: 30px;
+          color: #ffffff;
+          border-radius: 10px;
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+
+      &__inp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > input {
+          height: 40px;
+          border-radius: 5px 0px 0px 5px;
+          padding: 0 10px;
+          border: none;
+          width: 94%;
+
+          outline: none;
+          font-size: 18px;
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+            height: 30px;
+          }
+
+          &::placeholder {
+            font-size: 17px;
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+        }
+        > button {
+          cursor: pointer;
+          border-radius: 0px 10px 10px 0px;
+          border: none;
+          background-color: #ffffff;
+          > i {
+            font-size: 30px;
+
+            padding: 4px;
+
+            @media screen and (max-width: 768px) {
+              font-size: 17px;
+              padding: 5.5px;
+            }
+          }
+        }
+      }
+
+      &__ul {
+        width: 100%;
+        margin: 1rem 0;
+        color: #ffffff;
+
+        @media screen and (max-width: 768px) {
+          margin: 0.5rem 0;
+        }
+
+        > ul {
+          margin: 0;
+          padding-left: 20px;
+          padding-right: 10px;
+
+          @media screen and (max-width: 768px) {
+            padding-left: 15px;
+            padding-right: 7px;
+          }
+        }
+
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 8px 0;
+          font-size: 20px;
+          border-bottom: 2px solid #950740;
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+
+          &__li {
+            > li {
+              list-style-type: disclosure-closed;
+            }
+          }
+
+          &__btn {
+            > button {
+              border: none;
+              background-color: #1a1a1d;
+              cursor: pointer;
+              &:first-child {
+                margin-right: 10px;
+              }
+
+              &:last-child {
+                > i {
+                  color: #950740;
+
+                  @media screen and (max-width: 768px) {
+                    font-size: 17px;
+                  }
+                }
+              }
+
+              > i {
+                font-size: 22px;
+                color: #c3072f;
+                @media screen and (max-width: 768px) {
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &__container {
+    height: 100vh;
+    background-color: #1a1a1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+      min-width: 570px;
+      min-height: 200px;
+      background-color: #950740;
+      text-align: center;
+      padding: 1.5rem;
+      color: #ffffff;
+      border-radius: 10px;
+      padding-bottom: 2rem;
+      @media screen and (max-width: 768px) {
+        min-width: 100%;
+        padding: 0;
+      }
+
+      > input {
+        height: 40px;
+        border-radius: 5px;
+        padding: 0 10px;
+        border: none;
+        width: 94%;
+        margin-bottom: 20px;
+
+        outline: none;
+        font-size: 18px;
+        @media screen and (max-width: 768px) {
+          width: 75%;
+        }
+
+        &::placeholder {
+          font-size: 17px;
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__p {
+        > p {
+          margin-top: 20px;
+
+          > span {
+            cursor: pointer;
+            color: rgb(23, 201, 23);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+.error {
+  color: rgb(245, 179, 179);
+  margin: 0 0 10px 0;
+  text-align: left;
+}
